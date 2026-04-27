@@ -37,6 +37,13 @@ Required fields for **Bug report**:
 
 ---
 
+[BUG] mvn clean install fails
+To reproduce: run mvn clean install.
+Expected behavior: build success
+Actual behavior: build fails with "could not resolve dependencies for project com.lab:library-maintenance-lab:jar:1.0.0: org.junit.jupiter:junit-jupiter:jar:5.99.99-BROKEN was not found in https://repo.maven.apache.org/maven2 during a previous attempt."
+Affected file(s): All
+Label: 'bug'
+
 ## Phase 3 — Branch, Fix & Commit (12–22 min)
 
 ### Step 1 — Create your branch

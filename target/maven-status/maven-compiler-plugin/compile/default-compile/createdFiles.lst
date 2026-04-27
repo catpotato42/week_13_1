@@ -1,0 +1,4 @@
+com/lab/library/repository/BookRepository.class
+com/lab/library/LibraryApp.class
+com/lab/library/service/BookService.class
+com/lab/library/model/Book.class
