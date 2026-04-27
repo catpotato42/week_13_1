@@ -1,4 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: com.lab.library.service.BookServiceTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s -- in com.lab.library.service.BookServiceTest
+Tests run: 6, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.066 s <<< FAILURE! -- in com.lab.library.service.BookServiceTest
+com.lab.library.service.BookServiceTest.searchByTitle_nullQuery_returnsEmptyList -- Time elapsed: 0.012 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	The method toList() is undefined for the type Stream<Book>
+
+	at com.lab.library.service.BookService.searchByTitle(BookService.java:54)
+	at com.lab.library.service.BookServiceTest.searchByTitle_nullQuery_returnsEmptyList(BookServiceTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.lab.library.service.BookServiceTest.searchByTitle_matchingQuery_returnsResults -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	The method toList() is undefined for the type Stream<Book>
+
+	at com.lab.library.service.BookService.searchByTitle(BookService.java:54)
+	at com.lab.library.service.BookServiceTest.searchByTitle_matchingQuery_returnsResults(BookServiceTest.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.lab.library.service.BookServiceTest.searchByTitle_noMatch_returnsEmpty -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	The method toList() is undefined for the type Stream<Book>
+
+	at com.lab.library.service.BookService.searchByTitle(BookService.java:54)
+	at com.lab.library.service.BookServiceTest.searchByTitle_noMatch_returnsEmpty(BookServiceTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
