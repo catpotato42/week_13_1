@@ -40,6 +40,12 @@ class BookServiceTest {
     }
 
     @Test
+    void returnBook_notCheckedOutBook_returnsFalse() {
+        service.returnBook("978-3");
+        assertFalse(service.returnBook("978-3"));
+    }
+
+    @Test
     void searchByTitle_matchingQuery_returnsResults() {
         List<?> results = service.searchByTitle("clean");
         assertEquals(1, results.size());
